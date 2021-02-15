@@ -1,0 +1,121 @@
+html {
+    margin-top: 0 !important;
+    scroll-behavior: smooth;
+}
+
+#wpadminbar {
+    display: none;
+}
+
+body {
+    --nav-padding: 0;
+    margin-top: 0;
+    overflow-x: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+        --nav-padding: 58px;
+        padding-top: 58px;
+    }
+
+    @include media-breakpoint-up(md) {
+        --nav-padding: 89px;
+        padding-top: 89px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        --nav-padding: 98px;
+        padding-top: 98px;
+    }
+
+    &.body-subsite {
+        @include media-breakpoint-up(sm) {
+            --nav-padding: 59px;
+            padding-top: 59px;
+        }
+
+        @include media-breakpoint-up(md) {
+            --nav-padding: 133px;
+            padding-top: 133px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            --nav-padding: 143px;
+            padding-top: 143px;
+        }
+    }
+
+    &.blog {
+        @include media-breakpoint-up(sm) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.site-wrapper {
+    overflow-x: hidden;
+}
+
+.container {
+    @include make-container();
+
+    @include media-breakpoint-up(sm) {
+        .container {
+            max-width: $container-sm-width;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .container {
+            max-width: $container-md-width;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .container {
+            max-width: $container-lg-width;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .container {
+            max-width: $container-xl-width;
+        }
+    }
+}
+
+.row {
+    @include make-row();
+}
+
+hr {
+    margin: $paragraph-margin-bottom 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+dl,
+ol,
+ul,
+address {
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+blockquote {
+    border-left: .5rem solid $primary;
+    color: rgba(black, .875);
+    padding: 0 1.5rem 0 1rem;
+
+    @include media-breakpoint-up(md) {
+        border-left: 1rem solid $primary;
+        padding: 0 2.5rem 0 1.5rem;
+    }
+}

@@ -1,0 +1,85 @@
+$input-bg-color: rgba($black, .025);
+$input-bg-focus-color: rgba($black, .0625);
+$input-bg-hover-color: rgba($black, .05);
+$input-radio-bg-color: rgba($black, .075);
+
+$input-bg-error-color: rgba($red, .125);
+$input-bg-error-focus-color: rgba($red, .25);
+$input-bg-error-hover-color: rgba($red, .25);
+
+$input-border-color: rgba($black, .125);
+$input-border-focus-color: rgba($black, .25);
+$input-selected-border-color: rgba($black, .5);
+
+.acf-fields {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    & > .acf-field {
+        padding: 0;
+    }
+
+    label.forminator-checkbox {
+        font-size: 100%;
+    }
+}
+
+.acf-field {
+    .acf-label label {
+        font-weight: 400 !important;
+    }
+
+    p.description {
+        font-size: 75%;
+        font-weight: 300;
+    }
+}
+
+.forminator-acf-repeater .acf-repeater.-block > table {
+    & > tbody > tr {
+        td {
+            border: 0 !important;
+
+            &:first-of-type,
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    .acf-field input {
+        background-color: $input-bg-color;
+        border: 1px solid $input-border-color;
+        font-size: 75%;
+        line-height: 1.5;
+        padding: $paragraph-margin-bottom / 4;
+        transition: .25s ease-in-out;
+
+        &::placeholder {
+            color: rgba($body-color, .25);
+        }
+
+        &:focus {
+            background-color: $input-bg-focus-color;
+            border-color: $input-border-focus-color;
+            box-shadow: inset 0 0 0 .25rem $primary;
+            outline: 0;
+        }
+
+        &:hover {
+            background-color: $input-bg-hover-color;
+        }
+    }
+}
+
+.acf-button[type="submit"] {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-bold;
+}
+
+.acf-form-submit {
+    margin-bottom: $paragraph-margin-bottom;
+}

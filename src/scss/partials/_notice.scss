@@ -1,0 +1,63 @@
+.site-notice {
+    background-color: $primary;
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    opacity: 1;
+    padding: 1.5rem 0;
+    position: relative;
+    transition: opacity 500ms linear;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    p:last-of-type {
+        margin-bottom: 0;
+        padding-right: 2rem;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a.btn {
+        background-color: $black;
+        color: $primary;
+        @include bold;
+        font-size: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba($primary, .875);
+        }
+    }
+}
+
+.site-notice-content {
+    width: calc(100% - 2rem);
+}
+
+.site-notice-text {
+    margin-right: .5rem;
+}
+
+.site-notice-dismiss {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    color: rgba($black, .75);
+    @include bold;
+    font-size: 2rem;
+    line-height: 0;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+
+    &:hover {
+        color: $black;
+    }
+}

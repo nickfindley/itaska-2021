@@ -1,0 +1,190 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    color: $body-color;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-variant-numeric: proportional-nums;
+    line-height: 2.25;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+        line-height: 2;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 1.375rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1;
+
+    span.subtitle {
+        display: block;
+        font-size: 50%;
+        font-weight: 400;
+        letter-spacing: .125rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: -.05rem;
+
+    @include media-breakpoint-up(md) {
+        letter-spacing: -.1rem;
+    }
+}
+
+h5, h6 {
+    letter-spacing: .125rem;
+}
+
+h1 {
+    color: $black;
+    font-size: 3rem;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 3.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 4.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    color: $black;
+    font-size: 2.5rem;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 2.75rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 3.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 3.5rem;
+    }
+}
+
+h3 {
+    color: rgba($black, .875);
+    font-size: 2rem;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 2.25rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.75rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 3rem;
+    }
+}
+
+h4 {
+    color: rgba($black, .75);
+    font-size: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.75rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 2.5rem;
+    }
+}
+
+h5,
+.subtitle {
+    color: rgba($black, .75);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 1.75rem;
+    }
+}
+
+h6 {
+    color: rgba($black, .625);
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 1.5rem;
+    }
+}
+
+p, ul, ol, dl, blockquote {
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+abbr[title],
+acronym[title] {
+    border-bottom: 1px solid rgba($body-color, .25);
+    text-decoration: none;
+}
+
+dt {
+    font-weight: normal !important;
+}
+
+.small {
+    font-size: 75%;
+}
+
+.muted {
+    color: rgba($black, .5);
+
+    a {
+        color: rgba($black, .625);
+    }
+}

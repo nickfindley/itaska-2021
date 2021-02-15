@@ -1,0 +1,111 @@
+.callout-box {
+    font-size: .875rem;
+    line-height: 1.75;
+    margin: 0 0 $paragraph-margin-bottom;
+    padding: $paragraph-margin-bottom / 2;
+    position: relative;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+        clear: both;
+        float: right;
+        margin: 0 0 $paragraph-margin-bottom $paragraph-margin-bottom;
+        width: 50%;
+
+        &.align-left {
+            float: left;
+            margin: 0 $paragraph-margin-bottom $paragraph-margin-bottom 0;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+        padding: $paragraph-margin-bottom * .75;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 33.333%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 1.125rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+        margin: 0 0 $paragraph-margin-bottom / 2;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
+
+        a {
+            border-bottom: 0 !important;
+        }
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        text-align: left;
+
+        i {
+            padding-right: $paragraph-margin-bottom / 2;
+        }
+    }
+
+    a {
+        transition: all .25s ease-in-out;
+    }
+
+    &.black-yellow {
+        background: $black;
+        color: rgba($primary, .75);
+
+        h4 {
+            color: rgba($primary, .875);
+
+            .subtitle {
+                color: rgba($primary, .75);
+            }
+        }
+
+        a {
+            border-bottom: 1px solid rgba($primary, .875);
+            color: rgba($primary, .875);
+
+            &:hover {
+                border-bottom: 1px solid $primary;
+                color: $primary;
+            }
+        }
+    }
+
+    &.yellow-black {
+        background: $primary;
+        color: rgba($black, .75);
+
+        h4 {
+            color: rgba($black, .875);
+
+            .subtitle {
+                color: rgba($black, .75);
+            }
+        }
+
+        a {
+            border-bottom: 1px solid rgba($black, .875);
+            color: rgba($black, .875);
+
+            &:hover {
+                border-bottom: 1px solid $black;
+                color: $black;
+            }
+        }
+    }
+}

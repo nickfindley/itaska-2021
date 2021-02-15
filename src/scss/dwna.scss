@@ -1,0 +1,249 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "partials/variables";
+
+.page-id-397,
+.parent-pageid-397 {
+    .navbar {
+        background-color: $dwna-secondary;
+
+        &.navbar-dark .navbar-brand {
+            color: $white;
+        }
+
+        &.navbar-dark .navbar-nav .nav-link {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .navbar.navbar-top-banner {
+        background-color: $dwna-primary;
+
+        &.navbar-dark .navbar-nav .nav-link {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: $dwna-primary;
+
+        .dropdown-item {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .search-submit {
+            background-color: $dwna-secondary;
+            border-color: $dwna-secondary;
+            color: rgba($white, .75);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($dwna-secondary, .6);
+            }
+        }
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: rgba($dwna-primary, .5);
+
+        &-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(147,147,147,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+
+    .site-notice {
+        background-color: $dwna-primary;
+        color: rgba($white, .75);
+    }
+
+    .btn.action-btn {
+        color: rgba($white, .75);
+
+        &:hover {
+            background-color: rgba($dwna-secondary, .75);
+            border-color: $dwna-secondary;
+            color: $white;
+        }
+    }
+
+    .site-notice-dismiss {
+        color: rgba($white, .75);
+        
+        &:hover {
+            color: $white;
+        }
+    }
+
+    main {
+        a {
+            border-bottom: 1px solid rgba($dwna-secondary, .25);
+            color: rgba($dwna-secondary, .75);
+
+            &:hover {
+                background-color: transparent;
+                color: $dwna-secondary;
+            }
+        }
+
+        .main-header {
+            background-color: $dwna-primary;
+            color: $white;
+
+            .main-header-image {
+                background-color: transparent;
+
+                @include media-breakpoint-up(sm) {
+                    background-color: $white;
+                }
+            }
+
+            a {
+                border-bottom: 0;
+                color: $white;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .main-footer {
+            @include media-breakpoint-up(sm) {
+                background-color: $dwna-secondary;
+                color: rgba($white, .625);
+
+                a {
+                    border-bottom: 1px solid rgba($white, .25);
+                    color: rgba($white, .875);
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                p.post-breadcrumbs .breadcrumb_last,
+                p.post-breadcrumbs .current-item {
+                    color: rgba($white, .875);
+                }
+            }
+        }
+    }
+
+    .site-footer {
+        background-color: $dwna-secondary;
+        color: rgba($white, .625);
+
+        a {
+            border-bottom: 1px solid rgba($white, .25);
+            color: rgba($white, .875);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .gform_wrapper .button {
+        background-color: $dwna-primary;
+        border-color: $dwna-primary;
+        color: rgba($white, .75);
+
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color: $dwna-secondary;
+            border-color: $dwna-secondary;
+            color: rgba($white, .875);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($dwna-secondary, .6);
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba($dwna-secondary, .6);
+        }
+    }
+
+    .gform_confirmation_wrapper,
+    .gform_wrapper .validation_error,
+    .gform_wrapper .gfield_description.validation_message {
+        background-color: $dwna-primary;
+        color: $white;
+    }
+
+    .gform_ajax_spinner {
+        color: $dwna-primary;
+    }
+
+    .btn,
+    .btn-primary {
+        background-color: $dwna-primary;
+        border-color: $dwna-primary;
+        color: rgba($white, .75);
+
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color: $dwna-secondary;
+            border-color: $dwna-secondary;
+            color: rgba($white, .875);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($dwna-secondary, .6);
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba($dwna-secondary, .6);
+        }
+    }
+
+    .site-footer .btn {
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color: rgba($dwna-primary,.75);
+            border-color: rgba($dwna-primary,.75);
+        }
+    }
+
+    .dwna-events {
+        margin-top: 2.5rem;
+
+        .item-header {
+            background-color: $dwna-primary;
+
+            h3 a {
+                border-bottom: 0;
+                color: $white;
+            }
+
+            .item-meta {
+                color: rgba($white, .625);
+
+                a {
+                    border-bottom: 1px solid rgba($white, .25);
+                    color: rgba($white, .875);
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .site-footer h3 {
+        color: rgba($white, .875);
+    }
+}

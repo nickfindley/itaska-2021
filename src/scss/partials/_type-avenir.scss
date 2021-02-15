@@ -1,0 +1,158 @@
+$font-path: '/wp-content/themes/itaska/dist/fonts/avenir/';
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}LightIt.woff2') format('woff2'),
+        url('#{$font-path}LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}It.woff2') format('woff2'),
+        url('#{$font-path}It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}BoldIt.woff2') format('woff2'),
+        url('#{$font-path}BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Light.woff2') format('woff2'),
+        url('#{$font-path}Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Bold.woff2') format('woff2'),
+        url('#{$font-path}Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirCn';
+    src: url('#{$font-path}LightCn.woff2') format('woff2'),
+        url('#{$font-path}LightCn.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Regular.woff2') format('woff2'),
+        url('#{$font-path}Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Bold.woff2') format('woff2'),
+        url('#{$font-path}Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}LightIt.woff2') format('woff2'),
+        url('#{$font-path}LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}It.woff2') format('woff2'),
+        url('#{$font-path}It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Light.woff2') format('woff2'),
+        url('#{$font-path}Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}BoldIt.woff2') format('woff2'),
+        url('#{$font-path}BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('#{$font-path}Regular.woff2') format('woff2'),
+        url('#{$font-path}Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@mixin light {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+}
+
+@mixin light-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@mixin light-condensed {
+    font-family: 'AvenirCn', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+}
+
+@mixin regular-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@mixin bold {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 700;
+}
+
+@mixin bold-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}

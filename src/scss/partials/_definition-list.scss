@@ -1,0 +1,16 @@
+dl.contacts {
+    @extend .row;
+
+    dt {
+        @extend .col-5;
+        @extend .col-md-4;
+        @extend .col-lg-3;
+        font-weight: 700 !important;
+    }
+
+    dd {
+        @extend .col-7;
+        @extend .col-md-8;
+        @extend .col-lg-9;
+    }
+}

@@ -1,0 +1,86 @@
+.main-search div.search-form {
+    @include make-row;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    form {
+        @include make-col-ready;
+        @include make-col(6);;
+    }
+}
+
+.search-results .item-meta ul li .post-meta-expanded {
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.archive-sidebar {
+    .search-header h2 {
+        margin-bottom: 0;
+    }
+
+    div.search-form {
+        .input-group {
+            flex-wrap: nowrap;
+        }
+
+        .search-field {
+            @extend .form-control;
+            border-radius: 0;
+            flex: 1 0 75%;
+            font-size: 87.5%;
+        }
+
+        .search-submit-wrapper {
+            flex: 0 0 25%;
+
+            button {
+                font-size: 87.5%;
+                width: 100%;
+
+                @include media-breakpoint-up(lg) {
+                    span {
+                        position: absolute !important;
+                        width: 1px !important;
+                        height: 1px !important;
+                        padding: 0 !important;
+                        margin: -1px !important;
+                        overflow: hidden !important;
+                        clip: rect(0, 0, 0, 0) !important;
+                        white-space: nowrap !important;
+                        border: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-field {
+    @extend .form-control-lg;
+    border-radius: 0;
+}
+
+.relevanssi-query-term {
+    @include bold;
+}
+
+.search-result-from {
+    display: flex;
+    margin-bottom: -1rem;
+
+    & > span {
+        background: $primary;
+        box-shadow: $box-shadow;
+        color: $black;
+        display: block;
+        font-size: 87.5%;
+        line-height: 1;
+        padding: $paragraph-margin-bottom / 2;
+    }
+
+    a {
+        font-weight: 700;
+    }
+}

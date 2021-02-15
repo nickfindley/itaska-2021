@@ -1,0 +1,128 @@
+.item-header {
+    background-color: $black;
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    color: rgba($primary, .625);
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin: 1rem -1rem 2rem;
+        padding: 1rem;
+    }
+
+    h1, h2, h3 {
+        color: $primary;
+        margin: 0;
+
+        a { 
+            border-bottom: 0;
+            color: $primary;
+
+            &:hover {
+                background-color: transparent;
+                border-bottom: 0;
+                color: $primary;
+            }
+        }
+    }  
+
+    &.item-has-featured-image {
+        h1, h2, h3 {
+            margin: 1rem 0 0;
+        }
+
+        img {
+            min-width: 100%;
+        }
+    }
+
+    .item-meta {
+        ul {
+            @include light;
+            font-size: .75rem;
+            letter-spacing: .0625rem;
+            list-style-type: none;
+            margin: 1rem 0 0;
+            padding-left: 0;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(md) {
+                font-size: .875rem;
+            }
+
+            &.fa-ul {
+                margin: 1rem 0 0 1.5rem;
+            }
+
+            &.post-comment-links,
+            &.post-meta-share-links {
+                margin-top: 0;
+            }
+            
+            i {
+                padding-right: .25rem;
+
+                &.fa-money-bill-alt {
+                    padding-right: 1.25rem;
+                }
+            }
+
+            li {
+                @include media-breakpoint-up(md) {
+                    display: inline;
+                    padding-left: 1rem;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                .post-meta-expanded {
+                    @include media-breakpoint-up(md) {
+                        display: none;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        display: inline;
+                    }
+                }
+            }
+        }
+
+        a {
+            border-bottom: 1px solid rgba($primary, .25);
+            color: rgba($primary, .875);
+
+            &:hover {
+                background-color: transparent;
+                color: $primary;
+            }
+        }
+
+        .item-meta-location,
+        .item-meta-share-links {
+            margin-top: 0;
+        }
+    }
+}
+
+.places-items .item-header h2 {
+    font-size: 2rem;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 3rem;
+        letter-spacing: -.1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 3.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 4rem;
+    }
+}

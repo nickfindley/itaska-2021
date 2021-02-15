@@ -1,0 +1,236 @@
+video {
+    box-shadow: $box-shadow;
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+
+    &.img-shadow {
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+    }
+
+    &.img-no-shadow,
+    &.no-shadow {
+        box-shadow: 0 0 0 transparent !important;
+    }
+}
+
+.wp-block-image.img-no-shadow img,
+.wp-block-image.no-shadow img,
+.wp-block-image.img-no-shadow figure img,
+.wp-block-image.no-shadow figure img {
+    box-shadow: 0 0 0 transparent !important;
+}
+
+figure > a {
+    border-bottom: 0;
+
+    &:hover {
+        background-color: transparent;
+        border-bottom: 0;
+    }
+}
+
+.aligncenter {
+    display: block;
+    margin-bottom: $paragraph-margin-bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+    }
+}
+
+.alignleft {
+    display: block;
+    margin-bottom: $paragraph-margin-bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-up(sm) {
+        display: inline;
+        float: left;
+        margin-left: 0;
+        margin-right: $paragraph-margin-bottom;
+    }
+
+    img {
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+    }
+}
+
+.alignright {
+    display: block;
+    margin-bottom: $paragraph-margin-bottom;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-up(sm) {
+        display: inline;
+        float: right;
+        margin-left: $paragraph-margin-bottom;
+        margin-right: 0;
+    }
+
+    img {
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+    }
+}
+
+.aligncenter,
+.alignnone {
+    clear: both;
+    display: block;
+    margin: 0 auto $paragraph-margin-bottom;
+    max-width: 100%;
+}
+
+img.alignnone {
+    min-width: 100%;
+}
+
+img.alignleft,
+img.aligncenter,
+img.alignright,
+img.aligncenter,
+img.alignnone {
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+figcaption {
+    color: rgba($black, .625);
+    font-size: .75rem;
+    font-weight: 300;
+    margin: $paragraph-margin-bottom / 2 0;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+.wp-block-blockgallery-carousel {
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    margin: $paragraph-margin-bottom 0;
+}
+
+.wp-block-image {
+    clear: both;
+    display: block;
+    margin: 0 auto $paragraph-margin-bottom;
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+        clear: none;
+    }
+
+    figure.alignleft,
+    figure.alignright {
+        display: block;
+        float: none;
+        margin-bottom: $paragraph-margin-bottom;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media-breakpoint-up(sm) {
+            display: table;
+        }
+
+        img {
+            box-shadow: 0 .125rem 1rem rgba($black, .75);
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                width: auto;
+            }
+        }
+
+        figcaption {
+            clear: both;
+            margin: $paragraph-margin-bottom auto 0;
+        }
+    }
+
+    figure.alignleft {
+        @include media-breakpoint-up(sm) {
+            float: left;
+            margin-left: 0;
+            margin-right: $paragraph-margin-bottom;
+        }
+    }
+
+    figure.alignright {
+        @include media-breakpoint-up(sm) {
+            float: right;
+            margin-left: $paragraph-margin-bottom;
+            margin-right: 0;
+        }
+    }
+}
+
+figure.wp-block-image {
+    margin-bottom: $paragraph-margin-bottom;
+
+    img {
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+    }
+
+    &.size-full img {
+        min-width: 100%;
+    }
+}
+
+div.wp-block-image {
+    .alignleft > figcaption,
+    .aligncenter > figcaption,
+    .alignright > figcaption,
+    &.is-resized > figcaption {
+        display: block;
+        margin-top: $paragraph-margin-bottom / 2;
+    }
+}
+
+/* full width youtube videos */
+
+div.wp-block-embed__wrapper {
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+
+    iframe {
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+}
+
+div.wp-block-image {
+    figure.alignleft,
+    figure.aligncenter,
+    figure.alignright {
+        display: table;
+
+        & > figcaption {
+            caption-side: bottom;
+            display: table-caption;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.modal {
+    padding-right: 0 !important;
+}
+
+.modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 87.5vw;
+
+    @include media-breakpoint-up(md) {
+        max-width: 75vw;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 62.5vw;
+    }
+}
+
+.modal-content {
+    background-color: $primary;
+    border: 0;
+    border-radius: 0;
+    box-shadow: $box-shadow;
+    color: rgba($primary, .75);
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding: $paragraph-margin-bottom $paragraph-margin-bottom $paragraph-margin-bottom / 2;
+
+    .modal-title {
+        z-index: 1;
+    }
+
+    h5 {
+        color: rgba($black, .875);
+        font-weight: 400;
+    }
+
+    .close {
+        box-shadow: none;
+        color: rgba($black, .75);
+        opacity: 1;
+        text-shadow: none;
+
+        span {
+            vertical-align: sub;
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}
+
+.modal-body {
+    padding: $paragraph-margin-bottom / 2 $paragraph-margin-bottom;
+}
+
+.modal-footer {
+    border-top: 0;
+    padding: $paragraph-margin-bottom / 2 $paragraph-margin-bottom $paragraph-margin-bottom;
+}
+
+.modal-body .container-fluid {
+    padding: 0;
+}
+
+.nav-more {
+    @include make-col-ready;
+    color: $body-color;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    a {
+        border-bottom: 1px solid rgba($black, .25);
+        color: rgba($black, .875);
+
+        &:hover {
+            border-bottom: rgba($black, .5);
+            color: $black;
+        }
+    }
+
+    h4 {
+        font-weight: 400;
+        letter-spacing: .125rem;
+        text-transform: uppercase;
+
+        a {
+            border-bottom: 0;
+        }
+    }
+
+    h5 {
+        font-size: 1.125rem;
+        margin-bottom: .5rem;
+
+        a {
+            border-bottom: 0;
+        }
+    }
+
+    p, ul {
+        margin-bottom: $paragraph-margin-bottom / 2;
+
+        @include media-breakpoint-up(lg) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: $paragraph-margin-bottom / 2;
+    }
+}

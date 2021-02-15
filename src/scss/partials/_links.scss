@@ -1,0 +1,54 @@
+a {
+    border-bottom: 2px solid $primary;
+    color: rgba($black, .875);
+    text-decoration: none;
+    transition: all ease-in .25s;
+
+    &:hover {
+        border-bottom: 2px solid $black;
+        color: $black; 
+    }
+}
+
+h1 a,
+h2 a,
+h3 a {
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid $black;
+        color: $black;
+    }
+}
+
+
+// provide padding to anchor elements
+// to avoid being hidden under navbar
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id],
+p#disclaimer {
+    display: block;
+    position: relative;
+    margin-top: calc((var(--nav-padding) + #{$paragraph-margin-bottom}) * -1); 
+    padding-top: calc(var(--nav-padding) + #{$paragraph-margin-bottom});
+    z-index: -1;
+}
+
+p#disclaimer {
+    z-index: 1;
+}
+
+a[href="#toc"] {
+    border-bottom-width: 1px;
+}
+
+.item-header .item-meta .icon-link a {
+    border-bottom: 0;
+}
+
+.stretched-link {
+    border-bottom: 0 !important;
+}

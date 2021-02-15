@@ -1,0 +1,21 @@
+.member {
+    @include make-row();
+
+    .member-photo {
+        @include make-col-ready();
+        @include make-col(12);
+
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+    }
+
+    .member-bio {
+        @include make-col-ready();
+        @include make-col(12);
+
+        @include media-breakpoint-up(md) {
+            @include make-col(8);
+        }
+    }
+}

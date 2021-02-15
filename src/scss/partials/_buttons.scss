@@ -1,0 +1,116 @@
+button,
+.btn,
+.input-group .btn {
+    border: 0;
+    border-radius: 0;
+    box-shadow: $button-box-shadow;
+    line-height: 1;
+    padding: 1rem 2rem;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        box-shadow: $button-box-shadow-dark;
+    }
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.25rem;
+    }
+}
+
+button:focus,
+.btn:focus {
+    box-shadow: 0 0 0 .25rem rgba($primary, .25);
+    outline: 0;
+}
+
+.btn-small {
+    padding: .5rem 1rem;
+
+    &:focus {
+        box-shadow: 0 0 0 2px;
+    }
+}
+
+.btn-bold {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: $black;
+    color: rgba($primary, .95);
+
+    &:active {
+        background-color: rgba($black, .875);
+    }
+
+    &:focus {
+        background-color: $black;
+        box-shadow: inset 0 0 0 .25rem $primary;
+        color: $primary;
+    }
+
+    &:hover {
+        background-color: $black;
+        color: $primary;
+    }
+
+    &[disabled] {
+        background-color: $gray-400;
+        color: $gray-200;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.masonry-block .card a.btn-yellow {
+    background-color: $primary;
+    border-bottom: 0;
+    color: rgba($black, .95);
+
+    &:active {
+        background-color: rgba($primary, .875);
+    }
+
+    &:focus {
+        background-color: $primary;
+        box-shadow: inset 0 0 0 .25rem $black;
+        color: $black;
+    }
+
+    &:hover {
+        background-color: $primary;
+        border-bottom: 0;
+        color: $black;
+    }
+
+    &[disabled] {
+        background-color: $gray-400;
+        color: $gray-200;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.btn-secondary {
+    background-color: $gray-700;
+    color: $gray-400;
+
+    &:active {
+        background-color: $gray-600;
+    }
+
+    &:focus {
+        background-color: $gray-200;
+        box-shadow: inset 0 0 0 .25rem $gray-400;
+        color: $gray-800;
+    }
+
+    &:hover {
+        background-color: $gray-700;
+        color: $white;
+    }
+}

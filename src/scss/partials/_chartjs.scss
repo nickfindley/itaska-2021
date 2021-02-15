@@ -1,0 +1,48 @@
+.chart-container {
+    margin-bottom: $paragraph-margin-bottom;
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+        width: 50%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 33.33333%;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 25%;
+    }
+
+    &.width-50 {
+        @include media-breakpoint-up(lg) {
+            width: 50%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 50%;
+        }
+    }
+
+    &.float-right {
+        @include media-breakpoint-up(sm) {
+            float: right;
+            margin-left: $paragraph-margin-bottom;
+        }
+    }
+
+    &.float-left {
+        @include media-breakpoint-up(sm) {
+            float: left;
+            margin-right: $paragraph-margin-bottom;
+        }
+    }
+
+    &.center {
+        margin: 0 auto $paragraph-margin-bottom;
+        @include media-breakpoint-up(md) {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.archive-container {
+    header h2 {
+        font-size: 3rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 3.5rem;
+        }
+    }
+
+    .row {
+        margin: 0 -30px;
+    }
+}
+
+.archive-posts {
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(8);
+    }
+
+    .item-header .item-meta ul li .post-meta-expanded {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+}
+
+.archive-sidebar {
+    @include make-col-ready();
+    @include make-col(12);
+    font-size: .875rem;
+    hyphens: auto;
+    margin: 0 30px;
+    max-width: calc(100% - 60px);
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+        border-top: 0;
+        margin: 0;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 1.25rem;
+    }
+
+    header {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: $paragraph-margin-bottom;
+
+            @include media-breakpoint-up(lg) {
+                border-top: 0;
+                font-size: 2rem;
+                margin-bottom: $paragraph-margin-bottom / 2;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 2.25rem;
+            }
+        }
+    }
+
+    .item-header .item-meta ul li {
+        display: block;
+        font-size: .75rem;
+        padding-left: 0;
+
+        @include media-breakpoint-up(md) {
+            font-size: .875rem;
+        }
+
+        i {
+            padding-right: 1rem;
+        }
+    }
+
+    li.current-cat a {
+        @include bold;
+    }
+}
+
+.archive-list li {
+    display: inline;
+    hyphens: none;
+
+    &:after {
+        content: " · ";
+    }
+
+    &:last-child:after {
+        content: "";
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: block;
+
+        &:after {
+            content: "";
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.wp-block-columns {
+    display: flex;
+
+    &.are-vertically-aligned-center {
+        align-items: center;
+    }
+}
+
+.wp-block-column {
+    // flex-grow: 1;
+    // padding-right: $paragraph-margin-bottom;
+
+    // &:first-child {
+    //     flex-basis: 66.6667%;
+    // }
+
+    // &:last-child {
+    //     flex-basis: 33.3333%;
+    //     padding-right: 0;
+    // }
+
+    &.is-vertically-aligned-center {
+        align-items: center;
+    }
+}

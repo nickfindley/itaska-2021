@@ -1,0 +1,81 @@
+.carousel {
+    figure {
+        text-align: center;
+
+        img {
+            border: 1rem solid $black;
+            box-shadow: 0 .125rem 1rem rgba($black, .75);
+            height: 100%;
+            max-height: 300px;
+            max-width: 100%;
+            min-height: 300px;
+            object-fit: contain;
+            width: auto;
+
+            @include media-breakpoint-up(md) {
+                max-height: 400px;
+                min-height: 400px;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        border-bottom: 0;
+        opacity: 1;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .carousel-control-prev {
+        justify-content: flex-start;
+
+        @include media-breakpoint-up(sm) {
+            justify-content: center;
+        }
+    }
+
+    .carousel-control-next {
+        justify-content: flex-end;
+
+        @include media-breakpoint-up(sm) {
+            justify-content: center;
+        }
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+}
+
+.instagram {
+    background-color: $primary;
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    margin: 3rem 0 4rem;
+    padding: 2rem 1rem 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin: 0 -1rem 4rem;
+    }
+
+    h3, .follow {
+        color: $black;
+        margin-bottom: 1rem;
+        text-align: center;
+
+        a {
+            border-bottom: 1px solid rgba($black, .25);
+            color: $black;
+        }
+    }
+
+    .follow {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,70 @@
+.site-footer {
+    background-color: $black;
+    box-shadow:
+        $box-shadow,
+        0 50vh 0 50vh $black;
+    color: rgba($primary, .625);
+    font-size: .75rem;
+    font-weight: 300;
+    hyphens: auto;
+    line-height: 2;
+    margin: 2rem 0 0;
+    padding: 2rem 0;
+
+    @include media-breakpoint-up(md) {
+        font-size: .875rem;
+        padding: 2rem 0 4rem;
+    }
+
+    a {
+        border-bottom: 1px solid rgba($primary, .25);
+        color: rgba($primary, .75);
+
+        &:hover {
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+
+    h3 {
+        color: rgba($primary, .875);
+        font-size: .875rem;
+        font-weight: 300;
+        letter-spacing: .125rem;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 1.125rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        &.fa-ul {
+            margin-left: 1.5rem;
+
+            @include media-breakpoint-up(md) {
+                margin-left: 1.75rem;
+            }
+            
+            i.fab {
+                padding-right: .5rem;
+            }
+        }
+    }
+
+    .site-footer-section {
+        @include make-col-ready();
+        @include make-col(12);
+
+        @include  media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+    }
+}

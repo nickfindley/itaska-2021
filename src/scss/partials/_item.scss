@@ -1,0 +1,19 @@
+.item-container {
+    @include media-breakpoint-up(sm) {
+        margin-top: 0rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 2rem;
+    }
+}
+
+.archive-upcoming-events .item-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media-breakpoint-up(lg) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

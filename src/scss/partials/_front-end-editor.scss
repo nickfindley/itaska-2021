@@ -1,0 +1,50 @@
+.acf-form .acf-fields {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > .acf-field {
+        flex: 1 0 100%;
+        padding: $paragraph-margin-bottom 0;
+
+        @include media-breakpoint-up(lg) {
+            flex: 1 0 33.3333%;
+
+            &:nth-child(3) {
+                padding-right: $paragraph-margin-bottom;
+            }
+
+            &:nth-child(5) {
+                padding-left: $paragraph-margin-bottom;
+            }
+        }
+    }
+
+    & > .acf-field.acf-field--post-title,
+    & > .acf-field.acf-field--post-content {
+        flex: 1 0 100%;
+        font-size: 125%;
+        
+        input[type="text"] {
+            font-size: 125%;
+        }
+    }
+
+    .acf-label {
+        margin: 0;
+
+        label {
+            font-weight: 700 !important;
+            line-height: 1.5;
+            margin: 0;
+        }
+    }
+    
+    .wp-editor-wrap {
+        flex: 1 0 100%;
+        
+        button {
+            box-shadow: none;
+        }
+    }
+}

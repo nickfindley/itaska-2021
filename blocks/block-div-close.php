@@ -1,0 +1,1 @@
+</div><?php if ( get_field( 'block_closing_comment' ) ): ?><!-- <?php the_field( 'block_closing_comment' ); ?> --><?php endif; ?>

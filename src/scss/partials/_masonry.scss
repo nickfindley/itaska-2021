@@ -1,0 +1,141 @@
+.masonry-container {
+    @include make-row;
+
+    @include media-breakpoint-up(sm) {
+        margin-left: calc(-15px - 1rem);
+        margin-right: calc(-15px - 1rem);
+    }
+}
+
+.masonry-block {
+    @include make-col-ready;
+    margin-bottom: 30px;
+
+    .card-image,
+    .item-header-image {
+        height: 0;
+        margin-bottom: -1rem;
+        overflow: hidden;
+        padding-top: 50%;
+        position: relative;
+
+        img {
+            height: 100%;
+            left: 0px;
+            padding: 1rem 1rem 0;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        }
+    }
+
+    .item-header-image {
+        margin-bottom: 0;
+        
+        img {
+            padding: 0;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+    }
+
+    @include media-breakpoint-up(md) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(3);
+    }
+
+    .card {
+        background-color: $black;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 .125rem 1rem rgba($black, .75);
+        color: rgba($primary, .75);
+        font-size: 1rem;
+        line-height: 1.75;
+
+        @include media-breakpoint-up(md) {
+            line-height: 1.625;
+        }
+
+        .card-body {
+            padding: $paragraph-margin-bottom $paragraph-margin-bottom / 2;
+
+            p:last-child,
+            ul:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            border-bottom: 1px solid rgba($primary, .875);
+            color: rgba($primary, .875);
+
+            &:hover {
+                border-color: rgba($primary, .5);
+                color: $primary;
+            }
+        }
+
+        h2, h3, h4 {
+            color: rgba($primary, .875);
+            font-size: 2rem;
+            letter-spacing: 0;
+            margin-bottom: $paragraph-margin-bottom / 2;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 1.5rem;
+            }
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.75rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 2rem;
+            }
+
+            a {
+                border-bottom: 0;
+
+                i {
+                    color: rgba($primary, .5);
+                    font-size: 62.5%;
+                    vertical-align: .125rem;
+                }
+
+                &:hover i {
+                    color: rgba($primary, .875);
+                }
+            }
+        }
+    }
+}
+
+// .front-page-block.masonry-block,
+// .front-page-posts .masonry-block {
+.masonry-block {
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+    
+    @include media-breakpoint-up(lg) {
+        @include make-col(4);
+    }
+
+    @include media-breakpoint-up(xl) {
+        @include make-col(3);
+    }
+}
+
+.front-page-posts .masonry-block {
+    @include make-col(12);
+    
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+}

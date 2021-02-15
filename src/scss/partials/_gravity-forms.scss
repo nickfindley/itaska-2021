@@ -1,0 +1,484 @@
+/* https://roots.io/guides/style-gravity-forms-with-bootstrap-4/ */
+
+.form-row.gf_name_has_2,
+.form-row.ginput_container_address {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.gform_wrapper {
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+.gform_wrapper form {
+    margin-bottom: 0;
+}
+
+.gform_wrapper ul {
+    @extend .list-unstyled;
+}
+
+.gform_wrapper li {
+    @extend .form-group;
+}
+
+.gfield_required {
+    color: $danger;
+    @include bold;
+}
+
+label .gfield_required {
+    padding-left: .125rem;
+}
+
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="date"],
+.gform_wrapper input[type="datetime"],
+.gform_wrapper input[type="datetime-local"],
+.gform_wrapper input[type="month"],
+.gform_wrapper input[type="number"],
+.gform_wrapper input[type="password"],
+.gform_wrapper input[type="search"],
+.gform_wrapper input[type="tel"],
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="time"],
+.gform_wrapper input[type="week"],
+.gform_wrapper input[type="url"],
+.gform_wrapper select,
+.gform_wrapper textarea {
+    @extend .form-control;
+}
+
+.gform_wrapper .button {
+    @extend .btn;
+    @extend .btn-primary;
+}
+
+.gform_wrapper .gfield_error {
+    .gfield_label {
+        @extend .alert-danger;
+    }
+
+    input,
+    select,
+    textarea {
+        @extend .alert-danger;
+    }
+}
+
+.validation_error {
+    @extend .alert;
+    @extend .alert-danger;
+}
+
+.validation_message {
+    display: none;
+}
+
+.gform_heading {
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+.gform_body label {
+    margin-bottom: 0;
+}
+
+.gform_save_link {
+    font-size: .875rem;
+    margin-left: 1rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+.gf_name_has_2 {
+    @include make-row;
+    flex-wrap: nowrap;
+
+    @include media-breakpoint-up(md) {
+        // width: calc(50% + 5px);
+    }
+
+    .name_first,
+    .name_last {
+        @include make-col-ready;
+        display: block;
+        padding-right: 0;
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
+    }
+}
+
+.main-dt2 .gf_name_has_2 {
+    width: calc(100% + 10px);
+}
+
+// 1 = contact form
+//   1 = name
+//   2 = email
+//   4 = subject
+// 2 = volunteer intake form
+//   1 = email
+//   4 = phone
+// 3 = mailing list
+//   1 = email
+//   2 = name
+//   3 = address
+//   4 = choose your subscriptions
+//   5 = phone number
+//   6 = DT2 membership
+// 4 = DT2 contact
+//   1 = name
+//   2 = email
+//   4 = subject  
+// 5 = DWNA mailing list
+//   1 = email
+//   2 = name
+//   3 = address
+//   4 = phone
+// 6 = DT2 donation
+//   1 = name
+//   2 = email
+//   4 = donation amount
+//   6 = email or mail receipt
+//   7 = address
+// 7 = submit a place
+//   1 = name
+//   2 = address
+//   3 = website
+//   5 = email
+//   6 = phone
+//   7 = hours
+//   8 = notes
+// 9 = donate/volunteer form
+//   1 = email
+//   2 = name
+//   3 = address
+//   4 = phone
+//   21 = donation
+//   29 = business
+// 9 = update user -- wrong numbers, to be updated
+//   1 = email
+//   3 = name
+//   4 = address
+//   5 = phone
+//   6 = username
+//   7 = company
+#field_1,
+#field_2,
+#field_1_1,
+#field_1_2,
+#field_1_4,
+#field_2_1,
+#field_2_4,
+#field_3_1,
+#field_3_5,
+#field_4_1,
+#field_4_2,
+#field_4_4,
+#field_5_1,
+#field_5_4,
+#field_6_1,
+#field_6_2,
+#field_6_4,
+#field_7_1,
+#field_7_3,
+#field_7_5,
+#field_7_6,
+#field_7_7,
+// #field_9_1,
+// #field_9_5,
+// #field_9_7,
+#field_9_1,
+#field_9_4,
+#field_9_5,
+#field_9_21,
+#field_9_29,
+#blog-5 #field_1_3
+// #field_13_1,
+// #field_13_5,
+// #field_13_6,
+// #field_13_7,
+// #field_13_8
+{
+    @include make-col-ready;
+    @include make-col(12);
+    padding-left: 5px;
+    padding-right: 0;
+    width: calc(100% - 5px);
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+        margin-right: 100px; // force line break
+        padding-right: 5px;
+        width: 100%;
+    }
+}
+
+// phone and company on same line -- wrong numbers, to be updated
+// #field_9_5,
+// #field_9_7 {
+//     @include media-breakpoint-up(sm) {
+//         margin-right: 0;
+//     }
+// }
+
+// enlarge certain fields
+#input_3_1,
+#input_5_1,
+#input_6_4 {
+    font-size: 1.25rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+}
+
+// password fields -- wrong numbers, to be updated
+// #input_9_8_1_container,
+// #input_9_8_2_container {
+//     width: 50%;
+// }
+
+.ginput_container_address {
+    @include make-row;
+
+    span {
+        display: block;
+        padding-right: 0;
+    }
+}
+
+.address_line_1,
+.address_line_2 {
+    @include make-col-ready;
+    
+    @include media-breakpoint-up(md) {
+        @include make-col(6);
+    }
+}
+
+.address_city {
+    @include make-col-ready;
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(6);
+    }
+}
+
+.address_state,
+.address_zip {
+    @include make-col-ready;
+
+    @include media-breakpoint-up(sm) {
+        @include make-col(3);
+    }
+}
+
+.gfield_checkbox,
+.gfield_radio {
+    li {
+        margin-bottom: .25rem;
+    }
+
+    input {
+        vertical-align: text-top;
+    }
+
+    label {
+        padding-left: .5rem;
+    }
+}
+
+.gform_wrapper {
+    ul.gform_fields {
+        padding-left: 0;
+        padding-right: 0;
+        
+        li.gfield {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: $paragraph-margin-bottom * 1.5;
+        }
+    }
+
+    label {
+        color: $body-color;
+        font-size: 1rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.25rem;
+        }
+    }
+
+    span label {
+        color: rgba($body-color, .375);
+        font-size: .875rem;
+        margin-top: 0;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1rem;
+        }
+    }
+
+    .gfield_radio input:checked ~ .gfield_radio > li > label:before,
+    .custom-control-input:checked ~ .custom-control-label:before {
+        background-color: $primary;
+        border-color: rgba($black, .625);
+    }
+
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    .gfield_radio input:checked ~ .gfield_radio > li > label:after,
+    .custom-radio .custom-control-input:checked ~ .custom-control-label:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e")
+    }
+
+    input:checked + .custom-control-label {
+        font-weight: normal;
+        @include bold;
+    }
+
+    .custom-select {
+        background-image: none;
+    }
+
+    .custom-control-label {
+        color: rgba($body-color, .5);
+        font-size: .875rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1rem;
+        }
+    }
+
+    .form_saved_message_emailform {
+        margin-bottom: $paragraph-margin-bottom;
+
+        input[type="email"] {
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+            }
+        }
+
+        input[type="submit"] {
+            @extend .btn;
+            @extend .btn-primary;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.alert-warning,
+.gform_wrapper .validation_error,
+.gform_wrapper .gfield_description.validation_message {
+    background-color: $primary;
+    border: 0;
+    border-radius: 0;
+    color: $black;
+    @include bold;
+    font-size: .875rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+.gform_confirmation_wrapper,
+.form_saved_message_sent {
+    background-color: $primary;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    color: $body-color;
+    margin: $paragraph-margin-bottom auto;
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin: $paragraph-margin-bottom -1rem;
+    }
+
+    a {
+        border-bottom: 1px solid rgba($black, .25);
+    }
+
+    br {
+        content: '';
+        display: block;
+        margin-top: 1rem;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.page-id-3788,
+.page-parentid-3788 {
+    .gform_confirmation_wrapper,
+    .form_saved_message_sent {
+        background-color: $dt2-primary;
+        color: $white;
+    }
+}
+
+.page-id-397,
+.page-parentid-397 {
+    .gform_confirmation_wrapper,
+    .form_saved_message_sent {
+        background-color: $dwna-primary;
+        color: $white;
+    }
+}
+
+
+
+.gform_wrapper .validation_error {
+    box-shadow: 0 .125rem 1rem rgba($black, .75);
+    font-size: .875rem;
+    margin: $paragraph-margin-bottom auto;
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin: $paragraph-margin-bottom -1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+.alert-danger,
+.gform_wrapper .gfield_error .gfield_label,
+.validation_error {
+    background-color: transparent;
+    color: $body-color;
+}
+
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+    background-color: rgba($danger, .25);
+    border-color: $danger;
+    color: $danger;
+}
+
+.gfield_list_cell {
+    padding-right: 1rem;
+}
+
+.gfield_list_icons {
+    img {
+        max-width: 2rem;
+        min-width: 1rem;
+    }
+
+    a:hover {
+        background-color: transparent;
+    }
+}

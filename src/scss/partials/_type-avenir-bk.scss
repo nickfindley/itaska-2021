@@ -1,0 +1,188 @@
+$font-path: '/wp-content/themes/itaska/dist/fonts/avenir/';
+
+@font-face {
+    font-family: 'Avenir';
+    src:
+        url('#{$font-path}369B90_E_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_E_0.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin light {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:
+        url('#{$font-path}369B90_C_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_C_0.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@mixin light-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'AvenirCn';
+    src:
+        url('#{$font-path}369B90_D_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_D_0.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin light-condensed {
+    font-family: 'AvenirCn', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+// @font-face {
+//     font-family: 'AvenirCn';
+//     src: 
+//         url('#{$font-path}369B90_B_0.woff2') format('woff2'),
+//         url('#{$font-path}369B90_B_0.woff') format('woff');
+//     font-weight: 300;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @mixin light-condensed-italic {
+//     font-family: 'AvenirCn', sans-serif;
+//     font-style: italic;
+//     font-weight: 300;
+// }
+
+@font-face {
+    font-family: 'Avenir';
+    src: 
+        url('#{$font-path}369B90_10_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_10_0.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin regular {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: 
+        url('#{$font-path}369B90_A_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_A_0.woff') format('woff');
+    font-weight: 400;
+    font-style: italic; 
+    font-display: swap;
+}
+
+@mixin regular-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+// @font-face {
+//     font-family: 'AvenirCn';
+//     src: 
+//         url('#{$font-path}369B90_5_0.woff2') format('woff2'),
+//         url('#{$font-path}369B90_5_0.woff') format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @mixin regular-condensed {
+//     font-family: 'AvenirCn', sans-serif;
+//     font-weight: 400;
+// }
+
+// @font-face {
+//     font-family: 'AvenirCn';
+//     src: 
+//         url('#{$font-path}369B90_4_0.woff2') format('woff2'),
+//         url('#{$font-path}369B90_4_0.woff') format('woff');
+//     font-weight: 400;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @mixin regular-condensed-italic {
+//     font-family: 'AvenirCn', sans-serif;
+//     font-style: italic;
+//     font-weight: 400;
+// }
+
+@font-face {
+    font-family: 'Avenir';
+    src: 
+        url('#{$font-path}369B90_1_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_1_0.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin bold {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: 
+        url('#{$font-path}369B90_2_0.woff2') format('woff2'),
+        url('#{$font-path}369B90_2_0.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@mixin bold-italic {
+    font-family: 'Avenir', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+}
+  
+// @font-face {
+//     font-family: 'AvenirCn';
+//     src: 
+//         url('#{$font-path}369B90_3_0.woff2') format('woff2'),
+//         url('#{$font-path}369B90_3_0.woff') format('woff');
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @mixin bold-condensed {
+//     font-family: 'AvenirCn', sans-serif;
+//     font-weight: 700;
+// }
+
+// @font-face {
+//     font-family: 'AvenirCn';
+//     src: 
+//         url('#{$font-path}369B90_0_0.woff2') format('woff2'),
+//         url('#{$font-path}369B90_0_0.woff') format('woff');
+//     font-weight: 700;
+//     font-style: italic;
+//     font-display: swap;
+// }
+
+// @mixin bold-condensed-italic {
+//     font-family: 'AvenirCn', sans-serif;
+//     font-style: italic;
+//     font-weight: 700;
+// }

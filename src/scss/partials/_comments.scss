@@ -1,0 +1,146 @@
+.comments {
+    margin-top: -2rem;
+
+    .comments-container {
+        @include make-container();
+        @include media-breakpoint-up(sm) {
+            width: $container-sm-width;
+        }
+        
+        @include media-breakpoint-up(md) {
+            width: $container-md-width;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: $container-lg-width;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: $container-xl-width;
+        }
+    }
+}
+
+.comment {
+    font-size: .875rem;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+
+    .comment-author-link {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.25rem;
+        }
+    }
+
+    .comment-permalink,
+    .comment-edit-link,
+    .comment-parent-link {
+        border-bottom: 0;
+        color: rgba($black, .75);
+
+        &:hover {
+            background-color: transparent;
+            border-bottom: 1px solid $primary;
+            color: rgba(black, .875);
+        }
+    }
+}
+
+.comment-reply-link-p {
+    font-size: .875rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1rem;
+    }
+}
+
+.comments-child {
+    margin-left: 1rem;
+
+    @include media-breakpoint-up(sm) {
+        margin-left: 2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-left: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-left: 4rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-left: 5rem;
+    }
+}
+
+.comments dd {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 1rem;
+}
+
+.comments-child dd {
+    border-bottom: 0;
+}
+
+.comment-awaiting-moderation {
+    @include regular-italic;
+}
+
+.comment-form {
+    .comment-form-container {
+        @include make-container();
+        @include media-breakpoint-up(sm) {
+            width: $container-sm-width;
+        }
+        
+        @include media-breakpoint-up(md) {
+            width: $container-md-width;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: $container-lg-width;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: $container-xl-width;
+        }
+    }
+}
+
+.comment-form-cookies-consent,
+.comment-subscription-form,
+.form-submit {
+    margin-bottom: 0;
+    @include media-breakpoint-up(sm) {
+        @include make-col-ready();
+        @include make-col(9);
+        @include make-col-offset(3);
+
+        @include media-breakpoint-up(md) {
+            @include make-col-offset(2);
+        }
+    }
+
+    input {
+        vertical-align: text-top;
+    }
+
+    label {
+        display: inline;
+        margin: 0 0 0 1rem;
+    }
+}
+
+.comment-form-cookies-consent label {
+    margin-left: 1.3rem;
+}
+
+.form-submit {
+    margin-top: 1.5rem;
+}

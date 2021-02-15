@@ -1,0 +1,61 @@
+$blue:    #4372b8;
+$yellow:  #fce409;
+
+$primary:       $yellow;
+$secondary:     $blue;
+
+$dt2-primary:   #bf282d;
+$dt2-secondary: #451514;
+
+$dwna-primary:  #939393;
+$dwna-secondary:#4f4f4f;
+
+$amp-primary:   #949ca3;
+$amp-secondary: $black;
+
+$marquette-primary: #14b830;
+$marquette-secondary: #128393;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+$body-color:                rgba($black, .625);
+
+$link-color:                rgba($black, .875);
+$link-hover-color:          $black;
+
+$paragraph-margin-bottom:   2rem;
+
+$font-family-base:            proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$navbar-dark-color:                 rgba($primary, .75);
+$navbar-dark-hover-color:           rgba($primary, .875);
+$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-dark-toggler-border-color:  rgba($primary, .1) !default;
+
+$container-sm-width:  570px;
+$container-md-width:  720px;
+$container-lg-width:  960px;
+$container-xl-width:  1140px;
+
+// $enable-grid-classes: false;
+
+$box-shadow-dark: 0 .125rem 1rem rgba($black, .75);
+$box-shadow: 0 .125rem 1rem rgba($black, .5);
+$box-shadow-light: 0 .125rem 1rem rgba($black, .25);
+
+$button-box-shadow-dark: 0 .125rem .5rem rgba($black, .75);
+$button-box-shadow: 0 .125rem .5rem rgba($black, .5);
+$button-box-shadow-light: 0 .125rem .5rem rgba($black, .25);

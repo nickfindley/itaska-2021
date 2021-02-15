@@ -1,0 +1,203 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "partials/variables";
+
+.page-id-12572,
+.parent-pageid-12572 {
+    .navbar {
+        background-color: $amp-secondary;
+
+        &.navbar-dark .navbar-brand {
+            color: $white;
+        }
+
+        &.navbar-dark .navbar-nav .nav-link {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .navbar.navbar-top-banner {
+        background-color: $amp-primary;
+
+        &.navbar-dark .navbar-nav .nav-link {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: $amp-primary;
+
+        .dropdown-item {
+            color: rgba($white, .75);
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .search-submit {
+            background-color: $amp-secondary;
+            border-color: $amp-secondary;
+            color: rgba($white, .75);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($amp-secondary, .6);
+            }
+        }
+    }
+
+    .site-notice {
+        background-color: $amp-primary;
+        color: rgba($white, .75);
+    }
+
+    .btn.action-btn {
+        color: rgba($white, .75);
+
+        &:hover {
+            background-color: rgba($amp-secondary, .75);
+            border-color: $amp-secondary;
+            color: $white;
+        }
+    }
+
+    .site-notice-dismiss {
+        color: rgba($white, .75);
+        
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: rgba($amp-primary, .5);
+
+        &-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(148,156,163,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+
+    main {
+        a {
+            border-bottom: 1px solid rgba($amp-primary, .25);
+            color: rgba($amp-primary, .75);
+
+            &:hover {
+                background-color: transparent;
+                color: $amp-primary;
+            }
+        }
+
+        .main-header {
+            background-color: $amp-primary;
+            color: $white;
+
+            .main-header-image {
+                background-color: transparent;
+
+                @include media-breakpoint-up(sm) {
+                    background-color: $white;
+                }
+            }
+
+            a {
+                border-bottom: 0;
+                color: $white;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .main-footer {
+            @include media-breakpoint-up(sm) {
+                background-color: $amp-secondary;
+                color: rgba($white, .625);
+
+                a {
+                    border-bottom: 1px solid rgba($white, .25);
+                    color: rgba($white, .875);
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                p.post-breadcrumbs .breadcrumb_last,
+                p.post-breadcrumbs .current-item {
+                    color: rgba($white, .875);
+                }
+            }
+        }
+    }
+
+    .site-footer {
+        background-color: $amp-secondary;
+        color: rgba($white, .625);
+
+        a {
+            border-bottom: 1px solid rgba($white, .25);
+            color: rgba($white, .875);
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .btn,
+    .btn-primary,
+    .gform_wrapper .button {
+        background-color: $amp-primary;
+        border-color: $amp-primary;
+        color: rgba($white, .75);
+
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color: $amp-secondary;
+            border-color: $amp-secondary;
+            color: rgba($white, .875);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($amp-secondary, .6);
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba($amp-secondary, .6);
+        }
+    }
+
+    .site-footer .btn {
+        background-color: $amp-primary;
+        border-color: $amp-primary;
+
+        &:not(:disabled):not(.disabled):active,
+        &:hover {
+            background-color: rgba($amp-primary,.75);
+            border-color: rgba($amp-primary,.75);
+
+            &:focus {
+                box-shadow: 0 0 0 .2rem rgba($amp-primary, .6);
+            }
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba($amp-primary, .6);
+        }
+    }
+
+    .site-footer h3 {
+        color: rgba($amp-primary, .875);
+    }
+}
